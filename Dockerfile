@@ -1,5 +1,5 @@
 FROM tomcat
-MAINTAINER <yourName>
+MAINTAINER "Avinash Dimmeta"
 
-RUN rm -rf $CATALINA_HOME/webapps/ROOT
-COPY target/calculator-1.0.war $CATALINA_HOME/webapps/ROOT.war
+RUN del /S /Q %CATALINA_HOME%\webapps\ROOT
+COPY target/calculator-1.0.war %CATALINA_HOME%\webapps\ROOT.war
